@@ -11,7 +11,7 @@ from reportlab.platypus import (
 
 
 ROOT = Path(__file__).resolve().parent
-OUT = ROOT / "output" / "pdf" / "SIH2_Flood_Modelling_Project_Plan.pdf"
+OUT = ROOT / "output" / "pdf" / "HYDRA_Project_Plan.pdf"
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
 NAVY = colors.HexColor("#123047")
@@ -101,7 +101,7 @@ def footer(canvas, doc):
     canvas.line(0.72*inch, 0.54*inch, w-0.72*inch, 0.54*inch)
     canvas.setFont("Helvetica", 8)
     canvas.setFillColor(MUTED)
-    canvas.drawString(0.72*inch, 0.36*inch, "SIH 2026 | Flood and dam-break modelling framework")
+    canvas.drawString(0.72*inch, 0.36*inch, "HYDRA | Hydrological Disaster Risk Analysis")
     canvas.drawRightString(w-0.72*inch, 0.36*inch, str(doc.page))
     if doc.page > 1:
         canvas.setFillColor(BLUE)
@@ -112,8 +112,8 @@ def footer(canvas, doc):
 PAGE = (8.5*inch, 11*inch)
 doc = BaseDocTemplate(str(OUT), pagesize=PAGE, leftMargin=0.72*inch,
                       rightMargin=0.70*inch, topMargin=0.66*inch,
-                      bottomMargin=0.73*inch, title="SIH Flood Modelling Project Plan",
-                      author="SIH Project Team")
+                      bottomMargin=0.73*inch, title="HYDRA - Hydrological Disaster Risk Analysis",
+                      author="HYDRA Project Team")
 frame = Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height,
               leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
 doc.addPageTemplates(PageTemplate(id="all", frames=[frame], onPage=footer))
@@ -122,8 +122,8 @@ story = []
 # Cover
 story.append(Spacer(1, 0.48*inch))
 story.append(P("SMART INDIA HACKATHON PROJECT PLAN", "CoverLabelX"))
-story.append(P("Flood, Dam-Break and Natural-Lake Burst Intelligence", "TitleX"))
-story.append(P("An open-data software framework for monitoring, forecasting, simulation and downstream damage assessment in India", "SubtitleX"))
+story.append(P("HYDRA", "TitleX"))
+story.append(P("<b>Hydrological Disaster Risk Analysis</b><br/>An open-data software framework for monitoring, forecasting, simulation and downstream damage assessment in India", "SubtitleX"))
 story.append(HRFlowable(width="100%", thickness=2, color=TEAL))
 story.append(Spacer(1, 0.28*inch))
 callout("Core idea: combine satellite and agency data to watch water and rain upstream, estimate incoming water, run realistic failure scenarios, and show who and what is at risk downstream.")

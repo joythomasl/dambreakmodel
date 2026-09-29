@@ -1,4 +1,4 @@
-# JalDrishti Cascade
+# HYDRA – Hydrological Disaster Risk Analysis
 
 A software-only decision-support prototype for the Smart India Hackathon dam/lake-break problem. It now has a zero-licence-cost **self-contained demonstration mode** and a separate live-input mode. The configured Indian demonstration chain is:
 

@@ -62,7 +62,7 @@ def main() -> None:
     map_error = None
     try:
         map_url = f"{MAP_ENDPOINT}?bbox={west},{south},{east},{north}"
-        request = urllib.request.Request(map_url, headers={"User-Agent": "JalDrishti-SIH-structure-cache/1.0 (educational prototype)"})
+        request = urllib.request.Request(map_url, headers={"User-Agent": "HYDRA-SIH-structure-cache/1.0 (educational prototype)"})
         with urllib.request.urlopen(request, timeout=120) as response:
             root = ET.fromstring(response.read())
         nodes = {node.attrib["id"]: {"lat": float(node.attrib["lat"]), "lon": float(node.attrib["lon"])}
@@ -96,7 +96,7 @@ def main() -> None:
                     request = urllib.request.Request(
                         endpoint,
                         data=urllib.parse.urlencode({"data": query}).encode("utf-8"),
-                        headers={"User-Agent": "JalDrishti-SIH-structure-cache/1.0 (educational prototype)"},
+                        headers={"User-Agent": "HYDRA-SIH-structure-cache/1.0 (educational prototype)"},
                     )
                     with urllib.request.urlopen(request, timeout=90) as response:
                         payload = json.loads(response.read().decode("utf-8"))

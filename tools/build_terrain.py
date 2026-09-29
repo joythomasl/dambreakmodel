@@ -102,7 +102,7 @@ def main() -> None:
             tx, ty = int(px // 256), int(py // 256)
             if (tx, ty) not in cache:
                 url = f"{BASE}/{ZOOM}/{tx}/{ty}.png"
-                request = urllib.request.Request(url, headers={"User-Agent": "JalDrishti-SIH-terrain-prep/1.0"})
+                request = urllib.request.Request(url, headers={"User-Agent": "HYDRA-SIH-terrain-prep/1.0"})
                 cache[(tx, ty)] = _decode_png_rgb(urllib.request.urlopen(request, timeout=30).read())
                 urls.add(url)
             _, _, tile_rows = cache[(tx, ty)]

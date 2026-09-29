@@ -41,7 +41,7 @@ def _request(url: str, *, data: bytes | None = None, timeout: int = 120) -> byte
     request = urllib.request.Request(
         url,
         data=data,
-        headers={"User-Agent": "JalDrishti-SIH-geocontext/1.0 (educational prototype)"},
+        headers={"User-Agent": "HYDRA-SIH-geocontext/1.0 (educational prototype)"},
     )
     with urllib.request.urlopen(request, timeout=timeout) as response:
         return response.read()
