@@ -1,0 +1,3148 @@
+{
+  "id": "rishikesh-osm-buildings-v1",
+  "label": "OpenStreetMap building footprints in the local Rishikesh terrain domain",
+  "source": "OpenStreetMap contributors",
+  "source_url": "https://www.openstreetmap.org/copyright",
+  "download_endpoint": "https://api.openstreetmap.org/api/0.6/map",
+  "license": "Open Database License (ODbL); attribution required",
+  "bounds": {
+    "west": 78.2593116036283,
+    "south": 30.081220265900107,
+    "east": 78.2966883963717,
+    "north": 30.10277973409989
+  },
+  "downloaded_feature_count": 107,
+  "valid_feature_count": 107,
+  "retained_feature_count": 107,
+  "selection_note": "At most 1000 footprints are retained, prioritising mapped heights then larger area, to keep browser playback responsive.",
+  "map_download_error": null,
+  "tile_grid": {
+    "rows": 3,
+    "columns": 4,
+    "used_as_fallback": false,
+    "failed_tiles": []
+  },
+  "height_note": "OSM height/levels are used when present. Missing heights are estimated only for display and are not surveyed.",
+  "structures": [
+    {
+      "id": "osm-way-1362868966",
+      "osm_type": "way",
+      "osm_id": 1362868966,
+      "name": "Shri guru ram rai public school",
+      "building": "school",
+      "height_m": 7.0,
+      "height_basis": "osm_height",
+      "area_m2": 869.4,
+      "coordinates": [
+        [
+          78.2834595,
+          30.0864119
+        ],
+        [
+          78.2834987,
+          30.0865024
+        ],
+        [
+          78.2842197,
+          30.086302
+        ],
+        [
+          78.2841805,
+          30.0861905
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868967",
+      "osm_type": "way",
+      "osm_id": 1362868967,
+      "name": "SGRRP School",
+      "building": "school",
+      "height_m": 16.0,
+      "height_basis": "osm_height",
+      "area_m2": 339.7,
+      "coordinates": [
+        [
+          78.283375,
+          30.0866587
+        ],
+        [
+          78.2833113,
+          30.0864676
+        ],
+        [
+          78.2834472,
+          30.0864174
+        ],
+        [
+          78.2835251,
+          30.0866306
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362852806",
+      "osm_type": "way",
+      "osm_id": 1362852806,
+      "name": "Factory",
+      "building": "industrial",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 10716.3,
+      "coordinates": [
+        [
+          78.2870519,
+          30.0887073
+        ],
+        [
+          78.2879187,
+          30.0884697
+        ],
+        [
+          78.2877643,
+          30.0880167
+        ],
+        [
+          78.2876269,
+          30.0880501
+        ],
+        [
+          78.2874424,
+          30.0875636
+        ],
+        [
+          78.2875111,
+          30.0875451
+        ],
+        [
+          78.2874252,
+          30.0873743
+        ],
+        [
+          78.2871849,
+          30.0874671
+        ],
+        [
+          78.2872321,
+          30.0875451
+        ],
+        [
+          78.2865068,
+          30.0876862
+        ],
+        [
+          78.2866227,
+          30.087935
+        ],
+        [
+          78.2865326,
+          30.0879647
+        ],
+        [
+          78.2865755,
+          30.0880798
+        ],
+        [
+          78.2868201,
+          30.0880426
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868969",
+      "osm_type": "way",
+      "osm_id": 1362868969,
+      "name": "Sanskrit school",
+      "building": "school",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 4190.3,
+      "coordinates": [
+        [
+          78.2898789,
+          30.0836038
+        ],
+        [
+          78.2901321,
+          30.0835518
+        ],
+        [
+          78.2899519,
+          30.0832584
+        ],
+        [
+          78.2897802,
+          30.0828982
+        ],
+        [
+          78.2899004,
+          30.08285
+        ],
+        [
+          78.2896901,
+          30.0824081
+        ],
+        [
+          78.2896257,
+          30.0824081
+        ],
+        [
+          78.2895485,
+          30.0822075
+        ],
+        [
+          78.2893081,
+          30.0822855
+        ],
+        [
+          78.2895613,
+          30.0829391
+        ],
+        [
+          78.2896858,
+          30.0833253
+        ],
+        [
+          78.2897845,
+          30.0833067
+        ],
+        [
+          78.2897931,
+          30.0833958
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362852807",
+      "osm_type": "way",
+      "osm_id": 1362852807,
+      "name": null,
+      "building": "industrial",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 1561.7,
+      "coordinates": [
+        [
+          78.2864236,
+          30.0874598
+        ],
+        [
+          78.2862538,
+          30.0869405
+        ],
+        [
+          78.2863868,
+          30.0869013
+        ],
+        [
+          78.286418,
+          30.0870066
+        ],
+        [
+          78.2865765,
+          30.0869699
+        ],
+        [
+          78.2865907,
+          30.0869944
+        ],
+        [
+          78.2867039,
+          30.0869601
+        ],
+        [
+          78.2868229,
+          30.0872369
+        ],
+        [
+          78.2866983,
+          30.0872565
+        ],
+        [
+          78.2866388,
+          30.0871291
+        ],
+        [
+          78.2864973,
+          30.0871683
+        ],
+        [
+          78.2865737,
+          30.0874182
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869075",
+      "osm_type": "way",
+      "osm_id": 1362869075,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 840.3,
+      "coordinates": [
+        [
+          78.2834674,
+          30.0826623
+        ],
+        [
+          78.2841009,
+          30.0824484
+        ],
+        [
+          78.2840322,
+          30.0822914
+        ],
+        [
+          78.2834342,
+          30.0826087
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869046",
+      "osm_type": "way",
+      "osm_id": 1362869046,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 676.8,
+      "coordinates": [
+        [
+          78.2841769,
+          30.0887136
+        ],
+        [
+          78.2844563,
+          30.088634
+        ],
+        [
+          78.2843915,
+          30.0884392
+        ],
+        [
+          78.2840958,
+          30.0885067
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869045",
+      "osm_type": "way",
+      "osm_id": 1362869045,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 676.7,
+      "coordinates": [
+        [
+          78.2840647,
+          30.0884406
+        ],
+        [
+          78.2843441,
+          30.0883611
+        ],
+        [
+          78.2842793,
+          30.0881663
+        ],
+        [
+          78.2839835,
+          30.0882338
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869044",
+      "osm_type": "way",
+      "osm_id": 1362869044,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 676.6,
+      "coordinates": [
+        [
+          78.2839354,
+          30.0881057
+        ],
+        [
+          78.2842148,
+          30.0880262
+        ],
+        [
+          78.2841501,
+          30.0878314
+        ],
+        [
+          78.2838543,
+          30.0878989
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869018",
+      "osm_type": "way",
+      "osm_id": 1362869018,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 666.2,
+      "coordinates": [
+        [
+          78.2817356,
+          30.0871272
+        ],
+        [
+          78.2820499,
+          30.0870477
+        ],
+        [
+          78.2819761,
+          30.0868665
+        ],
+        [
+          78.2816677,
+          30.0869453
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868988",
+      "osm_type": "way",
+      "osm_id": 1362868988,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 596.0,
+      "coordinates": [
+        [
+          78.2831389,
+          30.0871738
+        ],
+        [
+          78.2832997,
+          30.0871157
+        ],
+        [
+          78.2831788,
+          30.0868054
+        ],
+        [
+          78.2830249,
+          30.0868667
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869004",
+      "osm_type": "way",
+      "osm_id": 1362869004,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 591.0,
+      "coordinates": [
+        [
+          78.2843941,
+          30.0882642
+        ],
+        [
+          78.2845873,
+          30.0882086
+        ],
+        [
+          78.2844884,
+          30.0879561
+        ],
+        [
+          78.2842934,
+          30.0879997
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868985",
+      "osm_type": "way",
+      "osm_id": 1362868985,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 535.0,
+      "coordinates": [
+        [
+          78.283919,
+          30.0870466
+        ],
+        [
+          78.2842108,
+          30.0869718
+        ],
+        [
+          78.2841456,
+          30.0868175
+        ],
+        [
+          78.2838544,
+          30.0868917
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868992",
+      "osm_type": "way",
+      "osm_id": 1362868992,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 535.0,
+      "coordinates": [
+        [
+          78.2827089,
+          30.0868479
+        ],
+        [
+          78.2830007,
+          30.0867731
+        ],
+        [
+          78.2829355,
+          30.0866188
+        ],
+        [
+          78.2826443,
+          30.086693
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868993",
+      "osm_type": "way",
+      "osm_id": 1362868993,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 535.0,
+      "coordinates": [
+        [
+          78.2838228,
+          30.0877962
+        ],
+        [
+          78.2841145,
+          30.0877214
+        ],
+        [
+          78.2840494,
+          30.0875671
+        ],
+        [
+          78.2837581,
+          30.0876413
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869054",
+      "osm_type": "way",
+      "osm_id": 1362869054,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 533.9,
+      "coordinates": [
+        [
+          78.2821701,
+          30.088406
+        ],
+        [
+          78.2824491,
+          30.0883362
+        ],
+        [
+          78.2823886,
+          30.088161
+        ],
+        [
+          78.2821133,
+          30.0882569
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868997",
+      "osm_type": "way",
+      "osm_id": 1362868997,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 496.3,
+      "coordinates": [
+        [
+          78.2833403,
+          30.0875205
+        ],
+        [
+          78.2836108,
+          30.0874493
+        ],
+        [
+          78.2835513,
+          30.0872938
+        ],
+        [
+          78.2832827,
+          30.0873631
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-742634686",
+      "osm_type": "way",
+      "osm_id": 742634686,
+      "name": "Bharadwaj Hospital and Maternity Home",
+      "building": "yes",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 473.3,
+      "coordinates": [
+        [
+          78.2878004,
+          30.098125
+        ],
+        [
+          78.2878916,
+          30.0982677
+        ],
+        [
+          78.2881285,
+          30.0981544
+        ],
+        [
+          78.2880373,
+          30.0980117
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869074",
+      "osm_type": "way",
+      "osm_id": 1362869074,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 449.1,
+      "coordinates": [
+        [
+          78.2837542,
+          30.0821516
+        ],
+        [
+          78.2839076,
+          30.0820653
+        ],
+        [
+          78.2837529,
+          30.0818873
+        ],
+        [
+          78.2835902,
+          30.0819718
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869028",
+      "osm_type": "way",
+      "osm_id": 1362869028,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 429.8,
+      "coordinates": [
+        [
+          78.2790376,
+          30.0878169
+        ],
+        [
+          78.2793284,
+          30.0877401
+        ],
+        [
+          78.279275,
+          30.0876133
+        ],
+        [
+          78.2789902,
+          30.0876924
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869026",
+      "osm_type": "way",
+      "osm_id": 1362869026,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 419.7,
+      "coordinates": [
+        [
+          78.2797931,
+          30.0876036
+        ],
+        [
+          78.2800605,
+          30.0875322
+        ],
+        [
+          78.2800157,
+          30.0874011
+        ],
+        [
+          78.2797358,
+          30.0874759
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869002",
+      "osm_type": "way",
+      "osm_id": 1362869002,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 411.0,
+      "coordinates": [
+        [
+          78.2842623,
+          30.0879359
+        ],
+        [
+          78.2844667,
+          30.0878897
+        ],
+        [
+          78.2844226,
+          30.087779
+        ],
+        [
+          78.2843923,
+          30.0877185
+        ],
+        [
+          78.2841955,
+          30.0877588
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869073",
+      "osm_type": "way",
+      "osm_id": 1362869073,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 390.5,
+      "coordinates": [
+        [
+          78.2831131,
+          30.0823113
+        ],
+        [
+          78.2834646,
+          30.0821507
+        ],
+        [
+          78.2833977,
+          30.0820632
+        ],
+        [
+          78.2830706,
+          30.0822382
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868986",
+      "osm_type": "way",
+      "osm_id": 1362868986,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 379.2,
+      "coordinates": [
+        [
+          78.283813,
+          30.0867864
+        ],
+        [
+          78.2839246,
+          30.0867548
+        ],
+        [
+          78.2841072,
+          30.0867031
+        ],
+        [
+          78.2840569,
+          30.0865999
+        ],
+        [
+          78.2837657,
+          30.0866742
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869017",
+      "osm_type": "way",
+      "osm_id": 1362869017,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 377.4,
+      "coordinates": [
+        [
+          78.2818957,
+          30.0875299
+        ],
+        [
+          78.2820182,
+          30.0875018
+        ],
+        [
+          78.2818897,
+          30.0872304
+        ],
+        [
+          78.2817784,
+          30.0872638
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869014",
+      "osm_type": "way",
+      "osm_id": 1362869014,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 377.3,
+      "coordinates": [
+        [
+          78.2821833,
+          30.0874528
+        ],
+        [
+          78.2823058,
+          30.0874247
+        ],
+        [
+          78.2821772,
+          30.0871534
+        ],
+        [
+          78.2820659,
+          30.0871868
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869037",
+      "osm_type": "way",
+      "osm_id": 1362869037,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 369.2,
+      "coordinates": [
+        [
+          78.2829993,
+          30.0876347
+        ],
+        [
+          78.283142,
+          30.0876015
+        ],
+        [
+          78.2830687,
+          30.0873838
+        ],
+        [
+          78.2829153,
+          30.0874287
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869038",
+      "osm_type": "way",
+      "osm_id": 1362869038,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 369.0,
+      "coordinates": [
+        [
+          78.2831253,
+          30.0875036
+        ],
+        [
+          78.2832679,
+          30.0874704
+        ],
+        [
+          78.2831947,
+          30.0872528
+        ],
+        [
+          78.2830413,
+          30.0872976
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869019",
+      "osm_type": "way",
+      "osm_id": 1362869019,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 365.8,
+      "coordinates": [
+        [
+          78.2814622,
+          30.087161
+        ],
+        [
+          78.2816939,
+          30.0870992
+        ],
+        [
+          78.2816491,
+          30.0869681
+        ],
+        [
+          78.2814061,
+          30.0870312
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869027",
+      "osm_type": "way",
+      "osm_id": 1362869027,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 365.7,
+      "coordinates": [
+        [
+          78.279533,
+          30.0876761
+        ],
+        [
+          78.2797647,
+          30.0876143
+        ],
+        [
+          78.2797199,
+          30.0874832
+        ],
+        [
+          78.279477,
+          30.0875463
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869006",
+      "osm_type": "way",
+      "osm_id": 1362869006,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 355.8,
+      "coordinates": [
+        [
+          78.284501,
+          30.0885143
+        ],
+        [
+          78.2848789,
+          30.088424
+        ],
+        [
+          78.2848576,
+          30.0883383
+        ],
+        [
+          78.2844781,
+          30.0884357
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868994",
+      "osm_type": "way",
+      "osm_id": 1362868994,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 350.5,
+      "coordinates": [
+        [
+          78.2835915,
+          30.0880104
+        ],
+        [
+          78.2837828,
+          30.0879589
+        ],
+        [
+          78.2837176,
+          30.0878046
+        ],
+        [
+          78.2835382,
+          30.0878396
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869036",
+      "osm_type": "way",
+      "osm_id": 1362869036,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 340.8,
+      "coordinates": [
+        [
+          78.2832681,
+          30.0879243
+        ],
+        [
+          78.2834069,
+          30.0878911
+        ],
+        [
+          78.2833413,
+          30.0876872
+        ],
+        [
+          78.2831879,
+          30.0877321
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868981",
+      "osm_type": "way",
+      "osm_id": 1362868981,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 340.1,
+      "coordinates": [
+        [
+          78.2837511,
+          30.0876142
+        ],
+        [
+          78.2838823,
+          30.0875769
+        ],
+        [
+          78.2837736,
+          30.0873473
+        ],
+        [
+          78.2836625,
+          30.0873643
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869013",
+      "osm_type": "way",
+      "osm_id": 1362869013,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 337.3,
+      "coordinates": [
+        [
+          78.2824832,
+          30.0874022
+        ],
+        [
+          78.2826196,
+          30.0873667
+        ],
+        [
+          78.2825361,
+          30.0871585
+        ],
+        [
+          78.2824002,
+          30.0871881
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868995",
+      "osm_type": "way",
+      "osm_id": 1362868995,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 335.6,
+      "coordinates": [
+        [
+          78.2835271,
+          30.0877936
+        ],
+        [
+          78.2837269,
+          30.0877507
+        ],
+        [
+          78.2836702,
+          30.0876037
+        ],
+        [
+          78.2834752,
+          30.0876473
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868979",
+      "osm_type": "way",
+      "osm_id": 1362868979,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 318.7,
+      "coordinates": [
+        [
+          78.28452,
+          30.087605
+        ],
+        [
+          78.2847255,
+          30.0875387
+        ],
+        [
+          78.2846825,
+          30.0874142
+        ],
+        [
+          78.2844677,
+          30.0874756
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868975",
+      "osm_type": "way",
+      "osm_id": 1362868975,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 318.6,
+      "coordinates": [
+        [
+          78.2841389,
+          30.0866158
+        ],
+        [
+          78.2843444,
+          30.0865495
+        ],
+        [
+          78.2843014,
+          30.086425
+        ],
+        [
+          78.2840866,
+          30.0864865
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868976",
+      "osm_type": "way",
+      "osm_id": 1362868976,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 318.5,
+      "coordinates": [
+        [
+          78.2842454,
+          30.0868388
+        ],
+        [
+          78.2844509,
+          30.0867726
+        ],
+        [
+          78.2844079,
+          30.0866481
+        ],
+        [
+          78.2841931,
+          30.0867095
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868978",
+      "osm_type": "way",
+      "osm_id": 1362868978,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 318.5,
+      "coordinates": [
+        [
+          78.2844154,
+          30.0873447
+        ],
+        [
+          78.2846209,
+          30.0872785
+        ],
+        [
+          78.2845779,
+          30.087154
+        ],
+        [
+          78.2843631,
+          30.0872154
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868977",
+      "osm_type": "way",
+      "osm_id": 1362868977,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 318.3,
+      "coordinates": [
+        [
+          78.2843519,
+          30.0871718
+        ],
+        [
+          78.2845573,
+          30.0871055
+        ],
+        [
+          78.2845144,
+          30.0869811
+        ],
+        [
+          78.2842996,
+          30.0870425
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869007",
+      "osm_type": "way",
+      "osm_id": 1362869007,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 314.4,
+      "coordinates": [
+        [
+          78.2845944,
+          30.0885867
+        ],
+        [
+          78.2849153,
+          30.0885066
+        ],
+        [
+          78.2848789,
+          30.088424
+        ],
+        [
+          78.2845618,
+          30.0885026
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869043",
+      "osm_type": "way",
+      "osm_id": 1362869043,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 312.2,
+      "coordinates": [
+        [
+          78.2826576,
+          30.0876561
+        ],
+        [
+          78.2829315,
+          30.0875786
+        ],
+        [
+          78.2829018,
+          30.0874845
+        ],
+        [
+          78.2826192,
+          30.0875596
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869032",
+      "osm_type": "way",
+      "osm_id": 1362869032,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 309.0,
+      "coordinates": [
+        [
+          78.2817185,
+          30.0875103
+        ],
+        [
+          78.2818211,
+          30.0874932
+        ],
+        [
+          78.2817308,
+          30.0872366
+        ],
+        [
+          78.2816209,
+          30.0872626
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869015",
+      "osm_type": "way",
+      "osm_id": 1362869015,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 303.1,
+      "coordinates": [
+        [
+          78.2822664,
+          30.0873182
+        ],
+        [
+          78.2823835,
+          30.0872846
+        ],
+        [
+          78.2822851,
+          30.0870652
+        ],
+        [
+          78.2821738,
+          30.0870986
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869016",
+      "osm_type": "way",
+      "osm_id": 1362869016,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 303.1,
+      "coordinates": [
+        [
+          78.2819789,
+          30.0873953
+        ],
+        [
+          78.282096,
+          30.0873616
+        ],
+        [
+          78.2819975,
+          30.0871423
+        ],
+        [
+          78.2818862,
+          30.0871756
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869009",
+      "osm_type": "way",
+      "osm_id": 1362869009,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 299.7,
+      "coordinates": [
+        [
+          78.2827845,
+          30.0872611
+        ],
+        [
+          78.2830792,
+          30.0871868
+        ],
+        [
+          78.2830478,
+          30.0870982
+        ],
+        [
+          78.282752,
+          30.0871769
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869033",
+      "osm_type": "way",
+      "osm_id": 1362869033,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 290.4,
+      "coordinates": [
+        [
+          78.2814509,
+          30.0873927
+        ],
+        [
+          78.2816243,
+          30.0873438
+        ],
+        [
+          78.281568,
+          30.0872035
+        ],
+        [
+          78.2813959,
+          30.0872503
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869031",
+      "osm_type": "way",
+      "osm_id": 1362869031,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 270.2,
+      "coordinates": [
+        [
+          78.2813879,
+          30.0875256
+        ],
+        [
+          78.2814906,
+          30.0875085
+        ],
+        [
+          78.2813762,
+          30.0872604
+        ],
+        [
+          78.2812904,
+          30.0872779
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869029",
+      "osm_type": "way",
+      "osm_id": 1362869029,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 256.8,
+      "coordinates": [
+        [
+          78.281012,
+          30.0877038
+        ],
+        [
+          78.2811515,
+          30.0876733
+        ],
+        [
+          78.2811051,
+          30.0875183
+        ],
+        [
+          78.2809556,
+          30.0875492
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869042",
+      "osm_type": "way",
+      "osm_id": 1362869042,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 254.3,
+      "coordinates": [
+        [
+          78.2828784,
+          30.0878557
+        ],
+        [
+          78.2830193,
+          30.0878211
+        ],
+        [
+          78.2829669,
+          30.087667
+        ],
+        [
+          78.2828216,
+          30.0877066
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869047",
+      "osm_type": "way",
+      "osm_id": 1362869047,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 254.3,
+      "coordinates": [
+        [
+          78.2828466,
+          30.088233
+        ],
+        [
+          78.2829874,
+          30.0881983
+        ],
+        [
+          78.282935,
+          30.0880442
+        ],
+        [
+          78.2827898,
+          30.0880838
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869053",
+      "osm_type": "way",
+      "osm_id": 1362869053,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 247.6,
+      "coordinates": [
+        [
+          78.2822673,
+          30.0877026
+        ],
+        [
+          78.2823775,
+          30.0876736
+        ],
+        [
+          78.2823091,
+          30.0874869
+        ],
+        [
+          78.2821947,
+          30.0875121
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869024",
+      "osm_type": "way",
+      "osm_id": 1362869024,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 243.5,
+      "coordinates": [
+        [
+          78.2801458,
+          30.0875189
+        ],
+        [
+          78.2804279,
+          30.0874515
+        ],
+        [
+          78.2804075,
+          30.0873767
+        ],
+        [
+          78.2802317,
+          30.0874182
+        ],
+        [
+          78.2801223,
+          30.087444
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868982",
+      "osm_type": "way",
+      "osm_id": 1362868982,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 242.4,
+      "coordinates": [
+        [
+          78.2837736,
+          30.0873473
+        ],
+        [
+          78.283952,
+          30.0872896
+        ],
+        [
+          78.2839115,
+          30.0871822
+        ],
+        [
+          78.2837237,
+          30.0872351
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868983",
+      "osm_type": "way",
+      "osm_id": 1362868983,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 242.3,
+      "coordinates": [
+        [
+          78.2836725,
+          30.0870743
+        ],
+        [
+          78.2838509,
+          30.0870166
+        ],
+        [
+          78.2838104,
+          30.0869092
+        ],
+        [
+          78.2836227,
+          30.0869621
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868984",
+      "osm_type": "way",
+      "osm_id": 1362868984,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 242.2,
+      "coordinates": [
+        [
+          78.2836282,
+          30.08723
+        ],
+        [
+          78.2838065,
+          30.0871723
+        ],
+        [
+          78.283766,
+          30.0870649
+        ],
+        [
+          78.2835783,
+          30.0871178
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868987",
+      "osm_type": "way",
+      "osm_id": 1362868987,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 239.1,
+      "coordinates": [
+        [
+          78.2842016,
+          30.0873803
+        ],
+        [
+          78.2843602,
+          30.0873545
+        ],
+        [
+          78.2842951,
+          30.0872002
+        ],
+        [
+          78.2841681,
+          30.0872475
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869076",
+      "osm_type": "way",
+      "osm_id": 1362869076,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 227.3,
+      "coordinates": [
+        [
+          78.2842576,
+          30.0823908
+        ],
+        [
+          78.2843923,
+          30.0823563
+        ],
+        [
+          78.2843516,
+          30.0822235
+        ],
+        [
+          78.2842132,
+          30.082224
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869020",
+      "osm_type": "way",
+      "osm_id": 1362869020,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 223.6,
+      "coordinates": [
+        [
+          78.2811682,
+          30.0872367
+        ],
+        [
+          78.2813108,
+          30.0872046
+        ],
+        [
+          78.2812661,
+          30.0870735
+        ],
+        [
+          78.2811111,
+          30.0871115
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868990",
+      "osm_type": "way",
+      "osm_id": 1362868990,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 215.7,
+      "coordinates": [
+        [
+          78.2830015,
+          30.0866521
+        ],
+        [
+          78.2832568,
+          30.0865847
+        ],
+        [
+          78.283226,
+          30.0865139
+        ],
+        [
+          78.2829691,
+          30.0865826
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868991",
+      "osm_type": "way",
+      "osm_id": 1362868991,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 213.9,
+      "coordinates": [
+        [
+          78.2823428,
+          30.086938
+        ],
+        [
+          78.282465,
+          30.0869096
+        ],
+        [
+          78.2823999,
+          30.0867553
+        ],
+        [
+          78.2822867,
+          30.0867812
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869000",
+      "osm_type": "way",
+      "osm_id": 1362869000,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 201.6,
+      "coordinates": [
+        [
+          78.2839448,
+          30.0868417
+        ],
+        [
+          78.2841445,
+          30.0867987
+        ],
+        [
+          78.2841072,
+          30.0867031
+        ],
+        [
+          78.2839246,
+          30.0867548
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868996",
+      "osm_type": "way",
+      "osm_id": 1362868996,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 200.7,
+      "coordinates": [
+        [
+          78.2835101,
+          30.0876099
+        ],
+        [
+          78.2836617,
+          30.0875841
+        ],
+        [
+          78.2836178,
+          30.0874592
+        ],
+        [
+          78.2834767,
+          30.0874954
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869022",
+      "osm_type": "way",
+      "osm_id": 1362869022,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 199.7,
+      "coordinates": [
+        [
+          78.2807068,
+          30.087352
+        ],
+        [
+          78.2808408,
+          30.0873236
+        ],
+        [
+          78.280796,
+          30.0871925
+        ],
+        [
+          78.2806604,
+          30.0872286
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869062",
+      "osm_type": "way",
+      "osm_id": 1362869062,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 194.3,
+      "coordinates": [
+        [
+          78.2811907,
+          30.0881021
+        ],
+        [
+          78.2812934,
+          30.0880838
+        ],
+        [
+          78.2812371,
+          30.0879141
+        ],
+        [
+          78.2811343,
+          30.0879475
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869061",
+      "osm_type": "way",
+      "osm_id": 1362869061,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 194.2,
+      "coordinates": [
+        [
+          78.2813538,
+          30.0878867
+        ],
+        [
+          78.2814565,
+          30.0878684
+        ],
+        [
+          78.2814001,
+          30.0876987
+        ],
+        [
+          78.2812974,
+          30.0877321
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869063",
+      "osm_type": "way",
+      "osm_id": 1362869063,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 194.2,
+      "coordinates": [
+        [
+          78.2810191,
+          30.0879851
+        ],
+        [
+          78.2811217,
+          30.0879668
+        ],
+        [
+          78.2810654,
+          30.0877971
+        ],
+        [
+          78.2809626,
+          30.0878305
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869064",
+      "osm_type": "way",
+      "osm_id": 1362869064,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 194.2,
+      "coordinates": [
+        [
+          78.2807616,
+          30.0881968
+        ],
+        [
+          78.2808642,
+          30.0881785
+        ],
+        [
+          78.2808079,
+          30.0880088
+        ],
+        [
+          78.2807051,
+          30.0880422
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869065",
+      "osm_type": "way",
+      "osm_id": 1362869065,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 194.1,
+      "coordinates": [
+        [
+          78.281783,
+          30.0879071
+        ],
+        [
+          78.2818856,
+          30.0878888
+        ],
+        [
+          78.2818293,
+          30.0877192
+        ],
+        [
+          78.2817265,
+          30.0877525
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869030",
+      "osm_type": "way",
+      "osm_id": 1362869030,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 187.1,
+      "coordinates": [
+        [
+          78.2812973,
+          30.0876187
+        ],
+        [
+          78.2814,
+          30.0876004
+        ],
+        [
+          78.2813337,
+          30.0874307
+        ],
+        [
+          78.2812408,
+          30.0874641
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869005",
+      "osm_type": "way",
+      "osm_id": 1362869005,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 180.8,
+      "coordinates": [
+        [
+          78.2844463,
+          30.0884342
+        ],
+        [
+          78.2846385,
+          30.088381
+        ],
+        [
+          78.2846087,
+          30.0883065
+        ],
+        [
+          78.2844137,
+          30.0883501
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869008",
+      "osm_type": "way",
+      "osm_id": 1362869008,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 180.8,
+      "coordinates": [
+        [
+          78.2827032,
+          30.0870303
+        ],
+        [
+          78.2828955,
+          30.0869771
+        ],
+        [
+          78.2828656,
+          30.0869026
+        ],
+        [
+          78.2826707,
+          30.0869462
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869067",
+      "osm_type": "way",
+      "osm_id": 1362869067,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 179.3,
+      "coordinates": [
+        [
+          78.2832703,
+          30.081754
+        ],
+        [
+          78.2833574,
+          30.0816928
+        ],
+        [
+          78.2832345,
+          30.0815745
+        ],
+        [
+          78.2831586,
+          30.08163
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869066",
+      "osm_type": "way",
+      "osm_id": 1362869066,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 179.1,
+      "coordinates": [
+        [
+          78.2844105,
+          30.0820166
+        ],
+        [
+          78.2844976,
+          30.0819554
+        ],
+        [
+          78.2843747,
+          30.0818372
+        ],
+        [
+          78.2842988,
+          30.0818926
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869068",
+      "osm_type": "way",
+      "osm_id": 1362869068,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 179.1,
+      "coordinates": [
+        [
+          78.2831638,
+          30.0818299
+        ],
+        [
+          78.2832509,
+          30.0817688
+        ],
+        [
+          78.283128,
+          30.0816505
+        ],
+        [
+          78.2830521,
+          30.0817059
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869069",
+      "osm_type": "way",
+      "osm_id": 1362869069,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 179.1,
+      "coordinates": [
+        [
+          78.2830685,
+          30.0819091
+        ],
+        [
+          78.2831556,
+          30.081848
+        ],
+        [
+          78.2830328,
+          30.0817297
+        ],
+        [
+          78.2829569,
+          30.0817851
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869071",
+      "osm_type": "way",
+      "osm_id": 1362869071,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 179.1,
+      "coordinates": [
+        [
+          78.2834851,
+          30.0818315
+        ],
+        [
+          78.2835722,
+          30.0817704
+        ],
+        [
+          78.2834493,
+          30.0816521
+        ],
+        [
+          78.2833734,
+          30.0817076
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869048",
+      "osm_type": "way",
+      "osm_id": 1362869048,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 168.6,
+      "coordinates": [
+        [
+          78.2825197,
+          30.0883104
+        ],
+        [
+          78.2826606,
+          30.0882757
+        ],
+        [
+          78.2826244,
+          30.0881723
+        ],
+        [
+          78.2824824,
+          30.0882104
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868998",
+      "osm_type": "way",
+      "osm_id": 1362868998,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 161.1,
+      "coordinates": [
+        [
+          78.2832765,
+          30.0873514
+        ],
+        [
+          78.2833871,
+          30.0873293
+        ],
+        [
+          78.283354,
+          30.087255
+        ],
+        [
+          78.2833276,
+          30.0871958
+        ],
+        [
+          78.2832275,
+          30.0872272
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869021",
+      "osm_type": "way",
+      "osm_id": 1362869021,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 141.0,
+      "coordinates": [
+        [
+          78.2809347,
+          30.087296
+        ],
+        [
+          78.2810347,
+          30.087277
+        ],
+        [
+          78.28099,
+          30.0871459
+        ],
+        [
+          78.2808985,
+          30.087171
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868999",
+      "osm_type": "way",
+      "osm_id": 1362868999,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 135.7,
+      "coordinates": [
+        [
+          78.283354,
+          30.087255
+        ],
+        [
+          78.2835202,
+          30.0872142
+        ],
+        [
+          78.2834947,
+          30.087137
+        ],
+        [
+          78.2833276,
+          30.0871958
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869072",
+      "osm_type": "way",
+      "osm_id": 1362869072,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 131.7,
+      "coordinates": [
+        [
+          78.283104,
+          30.0820982
+        ],
+        [
+          78.283193,
+          30.08205
+        ],
+        [
+          78.2830981,
+          30.0819528
+        ],
+        [
+          78.2830223,
+          30.0820082
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869035",
+      "osm_type": "way",
+      "osm_id": 1362869035,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.3,
+      "coordinates": [
+        [
+          78.2831486,
+          30.0880359
+        ],
+        [
+          78.2832894,
+          30.0880012
+        ],
+        [
+          78.2832681,
+          30.0879243
+        ],
+        [
+          78.2831229,
+          30.0879565
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869039",
+      "osm_type": "way",
+      "osm_id": 1362869039,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.3,
+      "coordinates": [
+        [
+          78.2830622,
+          30.0878386
+        ],
+        [
+          78.2832031,
+          30.087804
+        ],
+        [
+          78.2831818,
+          30.087727
+        ],
+        [
+          78.2830366,
+          30.0877592
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869040",
+      "osm_type": "way",
+      "osm_id": 1362869040,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.3,
+      "coordinates": [
+        [
+          78.2829195,
+          30.0879893
+        ],
+        [
+          78.2830603,
+          30.0879546
+        ],
+        [
+          78.2830391,
+          30.0878777
+        ],
+        [
+          78.2828938,
+          30.0879099
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869041",
+      "osm_type": "way",
+      "osm_id": 1362869041,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.3,
+      "coordinates": [
+        [
+          78.2827326,
+          30.0879415
+        ],
+        [
+          78.2828735,
+          30.0879068
+        ],
+        [
+          78.2828522,
+          30.0878299
+        ],
+        [
+          78.282707,
+          30.0878621
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869049",
+      "osm_type": "way",
+      "osm_id": 1362869049,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.3,
+      "coordinates": [
+        [
+          78.282509,
+          30.0878567
+        ],
+        [
+          78.2826499,
+          30.087822
+        ],
+        [
+          78.2826286,
+          30.0877451
+        ],
+        [
+          78.2824834,
+          30.0877773
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869052",
+      "osm_type": "way",
+      "osm_id": 1362869052,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.3,
+      "coordinates": [
+        [
+          78.2823578,
+          30.0879383
+        ],
+        [
+          78.2824986,
+          30.0879037
+        ],
+        [
+          78.2824774,
+          30.0878267
+        ],
+        [
+          78.2823321,
+          30.0878589
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869056",
+      "osm_type": "way",
+      "osm_id": 1362869056,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.3,
+      "coordinates": [
+        [
+          78.2821991,
+          30.0880671
+        ],
+        [
+          78.2823399,
+          30.0880324
+        ],
+        [
+          78.2823187,
+          30.0879555
+        ],
+        [
+          78.2821734,
+          30.0879877
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869059",
+      "osm_type": "way",
+      "osm_id": 1362869059,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.3,
+      "coordinates": [
+        [
+          78.2819568,
+          30.0877871
+        ],
+        [
+          78.2820976,
+          30.0877524
+        ],
+        [
+          78.2820764,
+          30.0876755
+        ],
+        [
+          78.2819311,
+          30.0877077
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869060",
+      "osm_type": "way",
+      "osm_id": 1362869060,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.3,
+      "coordinates": [
+        [
+          78.2821048,
+          30.0878617
+        ],
+        [
+          78.2822456,
+          30.087827
+        ],
+        [
+          78.2822244,
+          30.0877501
+        ],
+        [
+          78.2820791,
+          30.0877823
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869050",
+      "osm_type": "way",
+      "osm_id": 1362869050,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.2,
+      "coordinates": [
+        [
+          78.2824472,
+          30.0877244
+        ],
+        [
+          78.2825881,
+          30.0876898
+        ],
+        [
+          78.2825668,
+          30.0876129
+        ],
+        [
+          78.2824216,
+          30.0876451
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869051",
+      "osm_type": "way",
+      "osm_id": 1362869051,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.2,
+      "coordinates": [
+        [
+          78.2824033,
+          30.0880227
+        ],
+        [
+          78.2825442,
+          30.0879881
+        ],
+        [
+          78.2825229,
+          30.0879112
+        ],
+        [
+          78.2823777,
+          30.0879434
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869057",
+      "osm_type": "way",
+      "osm_id": 1362869057,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.2,
+      "coordinates": [
+        [
+          78.2820316,
+          30.0879742
+        ],
+        [
+          78.2821724,
+          30.0879396
+        ],
+        [
+          78.2821512,
+          30.0878627
+        ],
+        [
+          78.2820059,
+          30.0878949
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869058",
+      "osm_type": "way",
+      "osm_id": 1362869058,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.2,
+      "coordinates": [
+        [
+          78.2819243,
+          30.0876787
+        ],
+        [
+          78.2820651,
+          30.0876441
+        ],
+        [
+          78.2820438,
+          30.0875672
+        ],
+        [
+          78.2818986,
+          30.0875994
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869055",
+      "osm_type": "way",
+      "osm_id": 1362869055,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 128.1,
+      "coordinates": [
+        [
+          78.2820864,
+          30.0881893
+        ],
+        [
+          78.2822272,
+          30.0881547
+        ],
+        [
+          78.282206,
+          30.0880778
+        ],
+        [
+          78.2820608,
+          30.08811
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869012",
+      "osm_type": "way",
+      "osm_id": 1362869012,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 123.2,
+      "coordinates": [
+        [
+          78.2823824,
+          30.087121
+        ],
+        [
+          78.2824985,
+          30.0870929
+        ],
+        [
+          78.2824708,
+          30.0869997
+        ],
+        [
+          78.2823499,
+          30.0870368
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869003",
+      "osm_type": "way",
+      "osm_id": 1362869003,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 120.4,
+      "coordinates": [
+        [
+          78.2844226,
+          30.087779
+        ],
+        [
+          78.284555,
+          30.0877487
+        ],
+        [
+          78.2845282,
+          30.0876696
+        ],
+        [
+          78.2843949,
+          30.0877019
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869010",
+      "osm_type": "way",
+      "osm_id": 1362869010,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 119.6,
+      "coordinates": [
+        [
+          78.2829081,
+          30.0871147
+        ],
+        [
+          78.2830434,
+          30.0870827
+        ],
+        [
+          78.2830136,
+          30.0870081
+        ],
+        [
+          78.2828788,
+          30.0870376
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869011",
+      "osm_type": "way",
+      "osm_id": 1362869011,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 117.9,
+      "coordinates": [
+        [
+          78.2827569,
+          30.0871555
+        ],
+        [
+          78.282889,
+          30.0871235
+        ],
+        [
+          78.2828591,
+          30.0870489
+        ],
+        [
+          78.282726,
+          30.0870784
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869070",
+      "osm_type": "way",
+      "osm_id": 1362869070,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 117.4,
+      "coordinates": [
+        [
+          78.2832834,
+          30.0819463
+        ],
+        [
+          78.2833817,
+          30.0818819
+        ],
+        [
+          78.283298,
+          30.0818105
+        ],
+        [
+          78.2832221,
+          30.081866
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869034",
+      "osm_type": "way",
+      "osm_id": 1362869034,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 109.8,
+      "coordinates": [
+        [
+          78.2816194,
+          30.0875274
+        ],
+        [
+          78.2816937,
+          30.0875128
+        ],
+        [
+          78.2816374,
+          30.0873725
+        ],
+        [
+          78.2815756,
+          30.0873912
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869001",
+      "osm_type": "way",
+      "osm_id": 1362869001,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 101.9,
+      "coordinates": [
+        [
+          78.2841616,
+          30.087679
+        ],
+        [
+          78.2842492,
+          30.0876585
+        ],
+        [
+          78.2842072,
+          30.0875594
+        ],
+        [
+          78.2841195,
+          30.0875819
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362868989",
+      "osm_type": "way",
+      "osm_id": 1362868989,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 89.2,
+      "coordinates": [
+        [
+          78.2832612,
+          30.08686
+        ],
+        [
+          78.2833748,
+          30.0868335
+        ],
+        [
+          78.2833483,
+          30.0867664
+        ],
+        [
+          78.2832352,
+          30.0867924
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869025",
+      "osm_type": "way",
+      "osm_id": 1362869025,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 79.4,
+      "coordinates": [
+        [
+          78.2801223,
+          30.087444
+        ],
+        [
+          78.2802317,
+          30.0874182
+        ],
+        [
+          78.2802141,
+          30.0873542
+        ],
+        [
+          78.2801006,
+          30.0873852
+        ]
+      ]
+    },
+    {
+      "id": "osm-way-1362869023",
+      "osm_type": "way",
+      "osm_id": 1362869023,
+      "name": null,
+      "building": "residential",
+      "height_m": 7.5,
+      "height_basis": "estimated_from_type",
+      "area_m2": 70.5,
+      "coordinates": [
+        [
+          78.2805461,
+          30.0873287
+        ],
+        [
+          78.2806469,
+          30.0872976
+        ],
+        [
+          78.2806236,
+          30.0872407
+        ],
+        [
+          78.2805222,
+          30.0872695
+        ]
+      ]
+    }
+  ]
+}

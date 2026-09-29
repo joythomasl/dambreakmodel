@@ -1,0 +1,36 @@
+{
+  "basin": {
+    "id": "tehri-bhagirathi",
+    "name": "Tehri-Koteshwar Bhagirathi Cascade",
+    "state": "Uttarakhand",
+    "country": "India",
+    "coordinate_system": "EPSG:4326",
+    "mode": "online",
+    "description": "A connected Indian dam chain used for live-data monitoring and conditional cascade scenarios.",
+    "topology_source": "THDC India Limited",
+    "topology_source_url": "https://thdc.co.in/index.php/en/projects/hydro/koteshwar-hydro-power-project",
+    "topology_verified_note": "THDC states that Koteshwar is approximately 22 km downstream of Tehri and regulates releases toward Devprayag, Rishikesh and Haridwar."
+  },
+  "area_of_interest": {"west":77.75,"south":29.95,"east":78.85,"north":31.15},
+  "nodes": [
+    {"id":"tehri","name":"Tehri Dam","kind":"dam","lat":30.3779,"lon":78.4808,"order":0,"frl_m":830.0,"gross_storage_mcm":3540.0,"live_storage_mcm":2615.0,"structure_status":"official static specification","structure_source":"THDC and CWC reservoir bulletin","structure_source_url":"https://www.thdc.co.in/en/projects/hydro/tehri-dam-HPP-stage-I"},
+    {"id":"koteshwar","name":"Koteshwar Dam","kind":"dam","lat":30.2860,"lon":78.4630,"order":1,"frl_m":612.5,"live_storage_mcm":35.0,"structure_status":"official static specification","structure_source":"THDC official project page","structure_source_url":"https://thdc.co.in/en/projects/hydro/koteshwar-hydro-power-project"},
+    {"id":"devprayag","name":"Devprayag Junction","kind":"junction","lat":30.1460,"lon":78.5980,"order":2,"structure_status":"verified geographic node","structure_source":"THDC downstream description"},
+    {"id":"rishikesh","name":"Rishikesh Impact Area","kind":"settlement","lat":30.0869,"lon":78.2676,"order":3,"structure_status":"verified geographic node","structure_source":"THDC downstream description"}
+  ],
+  "edges": [
+    {"from":"tehri","to":"koteshwar","distance_km":22.0,"travel_hours":null,"attenuation":null,"status":"distance is sourced; routing parameters require hydraulic model"},
+    {"from":"koteshwar","to":"devprayag","distance_km":null,"travel_hours":null,"attenuation":null,"status":"topology verified; routing parameters require model"},
+    {"from":"devprayag","to":"rishikesh","distance_km":null,"travel_hours":null,"attenuation":null,"status":"topology verified; routing parameters require model"}
+  ],
+  "required_live_inputs": [
+    {"id":"reservoir_state","name":"Tehri and Koteshwar level/storage","preferred":"CWC/India-WRIS or operator feed","maximum_age_hours":192,"required_for":"initial condition"},
+    {"id":"rainfall","name":"Upstream catchment rainfall","preferred":"IMD AWS/ARG with IMERG/MOSDAC cross-check","maximum_age_hours":12,"required_for":"inflow estimate"},
+    {"id":"terrain","name":"DEM and river network","preferred":"Copernicus DEM and HydroSHEDS","maximum_age_hours":8760,"required_for":"routing and inundation"},
+    {"id":"exposure","name":"Buildings, roads and facilities","preferred":"OpenStreetMap Overpass","maximum_age_hours":720,"required_for":"damage analysis"}
+  ],
+  "observations": [],
+  "rainfall": [],
+  "assets": [],
+  "avulsion_paths": []
+}

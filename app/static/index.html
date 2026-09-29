@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JalDrishti Cascade | SIH Prototype</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/demo-polish.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div>
+      <p class="eyebrow">Smart India Hackathon · Decision support prototype</p>
+      <h1>JalDrishti <em>Cascade</em></h1>
+    </div>
+    <div class="top-actions">
+      <div id="systemStatus" class="status-pill neutral"><i></i> Checking live inputs</div>
+      <button id="offlineDemo" class="button primary">Launch demonstration</button>
+      <button id="refreshSources" class="button ghost">Refresh sources</button>
+    </div>
+  </header>
+
+  <div id="warningStrip" class="warning-strip">
+    <strong>Not an official warning service.</strong> Live observations and model assumptions are shown separately. Conditional failure is a what-if branch.
+  </div>
+
+  <main class="workspace">
+    <aside class="sidebar">
+      <section class="panel site-panel">
+        <p class="section-label">Active Indian basin</p>
+        <h2 id="basinName">Loading…</h2>
+        <p id="basinDescription" class="muted"></p>
+        <div class="mini-grid">
+          <div><span>State</span><strong id="basinState">—</strong></div>
+          <div><span>Mode</span><strong id="modeLabel">Live inputs</strong></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <div><p class="section-label">Input readiness</p><h3>Quality gate</h3></div>
+          <span id="gateBadge" class="tag neutral">Checking</span>
+        </div>
+        <div id="gateChecks" class="gate-list"></div>
+      </section>
+
+      <section id="uploadPanel" class="panel">
+        <p class="section-label">User uploads</p>
+        <h3>Add missing live inputs</h3>
+        <p class="microcopy">Files must carry source URL, timestamp, unit and quality. No values are auto-filled.</p>
+        <label class="upload-row">Reservoir observations
+          <input id="observationFile" type="file" accept=".csv">
+          <button data-import="observations" class="button small">Import CSV</button>
+        </label>
+        <label class="upload-row">Catchment rainfall
+          <input id="rainfallFile" type="file" accept=".csv">
+          <button data-import="rainfall" class="button small">Import CSV</button>
+        </label>
+        <label class="upload-row">Exposure and unit costs
+          <input id="assetFile" type="file" accept=".json,.geojson">
+          <button data-import="assets" class="button small">Import JSON</button>
+        </label>
+        <label class="upload-row">Avulsion candidates
+          <input id="avulsionFile" type="file" accept=".geojson,.json">
+          <button data-import="avulsion" class="button small">Import GeoJSON</button>
+        </label>
+        <p id="importMessage" class="microcopy"></p>
+      </section>
+
+      <section class="panel scenario-panel">
+        <p class="section-label">What-if scenario</p>
+        <h3>Upstream event</h3>
+        <label id="presetRow">Demo story
+          <select id="demoPreset">
+            <option value="tehri_breach">Tehri breach → cascade stress</option>
+            <option value="extreme_monsoon">Extreme monsoon + rapid breach</option>
+            <option value="lake_outburst">Natural-lake outburst</option>
+            <option value="blockage_failure">River-blockage failure</option>
+            <option value="sudden_release">Emergency reservoir release</option>
+          </select>
+        </label>
+        <label>Event type
+          <select id="eventType">
+            <option value="dam_breach">Dam breach</option>
+            <option value="sudden_release">Sudden release</option>
+            <option value="lake_burst">Natural-lake burst</option>
+            <option value="blockage_failure">River-blockage failure</option>
+          </select>
+        </label>
+        <div class="field-pair">
+          <label><span id="breachWidthLabel">Breach width</span> (m)<input id="breachWidth" type="number" min="1" value="60"></label>
+          <label><span id="breachDepthLabel">Breach depth</span> (m)<input id="breachDepth" type="number" min="1" value="30"></label>
+        </div>
+        <label><span id="formationLabel">Formation time</span> (h)<input id="formationHours" type="number" min="0.1" step="0.1" value="1.5"></label>
+        <label>Rainfall sensitivity <span id="rainValue">1.00×</span><input id="rainMultiplier" type="range" min="0.7" max="1.3" value="1" step="0.05"></label>
+        <p id="eventHint" class="scenario-hint">Rapid hypothetical breach at Tehri, routed through Koteshwar and downstream settlements.</p>
+        <button id="runScenario" class="button primary wide">Run cascade + 2-D simulation</button>
+        <p id="runMessage" class="microcopy" aria-live="polite">Live inputs must pass the quality gate, or launch the synthetic demonstration.</p>
+      </section>
+    </aside>
+
+    <div class="main-column">
+      <section class="panel source-panel source-overview">
+        <div class="panel-heading">
+          <div><p class="section-label">Input provenance and readiness</p><h2 id="sourceTitle">Online sources</h2></div>
+          <span id="lastRefresh" class="tag neutral">Not refreshed</span>
+        </div>
+        <div id="sourceList" class="source-list"></div>
+      </section>
+
+      <section class="kpi-row" id="kpiRow">
+        <div class="kpi"><span>Upstream rainfall · mm</span><strong>—</strong><small>Waiting for observations</small></div>
+        <div class="kpi"><span>Tehri storage · BCM</span><strong>—</strong><small>Waiting for CWC/operator data</small></div>
+        <div class="kpi"><span>Koteshwar storage · MCM</span><strong>—</strong><small>Waiting for operator data</small></div>
+        <div class="kpi accent"><span>Scenario state</span><strong>Blocked</strong><small>Quality gate has not passed</small></div>
+      </section>
+
+      <section id="missionSummary" class="panel mission-summary hidden" aria-live="polite">
+        <div class="mission-heading">
+          <div>
+            <p class="section-label">Decision snapshot · selected what-if branch</p>
+            <h2 id="missionTitle">Scenario impact summary</h2>
+            <p id="missionNarrative" class="mission-narrative"></p>
+          </div>
+          <div class="mission-actions">
+            <span class="tag warning">Synthetic · uncalibrated</span>
+            <button id="jumpToSimulation" class="button small" type="button">Inspect 3-D flood</button>
+            <button id="jumpToDamage" class="button small" type="button">Review damage</button>
+          </div>
+        </div>
+        <div id="missionMetrics" class="mission-metrics"></div>
+        <div id="cascadeRibbon" class="cascade-ribbon"></div>
+      </section>
+
+      <div class="model-cascade-grid">
+      <section id="simulationSection" class="panel simulation-panel">
+        <div class="panel-heading">
+          <div><p class="section-label">Satellite-draped terrain · executed local water model</p><h2>3-D flood and reservoir corridor</h2></div>
+          <span class="tag warning">Uncalibrated · not Delft3D/SPH</span>
+        </div>
+        <p class="microcopy">Public sampled terrain near Rishikesh with an OSM-mapped, DEM-conditioned Ganges corridor and a south outlet. Drag to rotate, scroll to zoom, and hover to inspect a model cell. Blue water comes from the calculated depth frames and playback remains on the downstream final frame.</p>
+        <div class="simulation-controls">
+          <label>Branch <select id="simulationBranch"><option value="no_secondary_failure">No secondary breach</option><option value="conditional_secondary_failure" selected>Conditional secondary breach</option></select></label>
+          <button id="simulationPlay" class="button small" disabled>Play</button>
+          <button id="simulationPeak" class="button small" disabled>Peak frame</button>
+          <input id="simulationTime" type="range" min="0" max="0" value="0" disabled aria-label="Simulation frame">
+          <strong id="simulationClock">t = 0 min</strong>
+        </div>
+        <div class="simulation-tools">
+          <label>Terrain view <select id="simulationDomain"><option value="local">Rishikesh impact model</option><option value="regional">Tehri Reservoir → Rishikesh</option></select></label>
+          <button id="simulationOblique" class="button small" type="button">Oblique view</button>
+          <button id="simulationTop" class="button small" type="button">Top view</button>
+          <label>Vertical exaggeration <input id="simulationExaggeration" type="range" min="2" max="30" step="1" value="18"><strong id="simulationExaggerationValue">18×</strong></label>
+          <label class="simulation-check"><input id="simulationSatellite" type="checkbox" checked> Satellite</label>
+          <label class="simulation-check"><input id="simulationRoads" type="checkbox" checked> Roads</label>
+          <label class="simulation-check"><input id="simulationLabelsToggle" type="checkbox" checked> Labels</label>
+          <label class="simulation-check"><input id="simulationStructures" type="checkbox" checked> Mapped structures</label>
+          <label class="simulation-check"><input id="simulationWireframe" type="checkbox" checked> Terrain grid</label>
+          <label class="simulation-check"><input id="simulationMaxExtent" type="checkbox" checked> Show maximum wet extent</label>
+        </div>
+        <div class="simulation-stage">
+          <canvas id="simulationCanvas" width="900" height="500" tabindex="0" aria-label="Rotatable 3D terrain and simulated floodwater"></canvas>
+          <div id="simulationOverlay">Run a scenario to generate depth frames.</div>
+          <div id="simulationCompass" aria-hidden="true"><span>N</span><i>↑</i></div>
+          <div id="simulationProbe" class="hidden"></div>
+          <div id="simulationLabels" aria-hidden="true"></div>
+          <div id="simulationScale" class="simulation-scale">Grid ≈ 50 m × 50 m per cell</div>
+        </div>
+        <div class="simulation-depth-legend"><span>Water depth</span><i class="depth-light"></i><span>0.1–0.5 m</span><i class="depth-mid"></i><span>0.5–2 m</span><i class="depth-deep"></i><span>&gt;2 m</span><i class="building-key"></i><span>OSM footprint</span><i class="extent-key"></i><span>Maximum wet extent</span></div>
+        <div id="simulationStats" class="simulation-stats"></div>
+        <p id="simulationAttribution" class="simulation-attribution">Terrain: Mapzen Terrain Tiles/AWS Open Data. Satellite: Sentinel-2 cloudless 2024 by EOX. Roads and structures: OpenStreetMap contributors.</p>
+        <p class="microcopy">SI units: horizontal distance and elevation in metres (m), elevation relative to mean sea level where available, water depth in metres (m), and elapsed time in minutes (min) or hours (h). Terrain and water height use the selected vertical exaggeration; colours are visual classes, not extra model resolution. The numerical engine approximates depth-averaged shallow-water flow on 50 m cells. Not suitable for warnings, evacuation or final cost decisions.</p>
+      </section>
+
+      <section id="cascadeSection" class="panel map-panel cascade-panel">
+        <div class="panel-heading">
+          <div><p class="section-label">Time-routed consequence chain · schematic</p><h2>Cascade propagation</h2></div>
+          <span id="cascadeBranchBadge" class="tag neutral">Awaiting scenario</span>
+        </div>
+        <p class="microcopy">The moving line follows the routed wave from the upstream trigger through the conditional Koteshwar branch to Rishikesh.</p>
+        <svg id="networkMap" viewBox="0 0 430 560" role="img" aria-label="Tehri to Rishikesh cascade propagation"></svg>
+        <div id="mapTooltip" class="map-tooltip hidden"></div>
+        <div id="cascadeSummary" class="cascade-summary">
+          <div class="empty-state">Run a scenario to compare the contained and secondary-breach pathways.</div>
+        </div>
+        <div class="legend cascade-legend"><span><i class="dot dam"></i> Dam</span><span><i class="dot place"></i> Settlement</span><span><i class="line"></i> Routed wave</span></div>
+      </section>
+      </div>
+
+      <section class="analysis-grid">
+        <div class="panel chart-panel">
+          <div class="panel-heading">
+            <div><p class="section-label">Input rainfall → estimated discharge → routed wave</p><h2>Rainfall and discharge</h2></div>
+            <div class="legend"><span><i class="dot rain"></i> Rainfall (mm)</span><span><i class="dot flow"></i> Discharge (m³/s)</span></div>
+          </div>
+          <canvas id="hydroChart" width="900" height="300"></canvas>
+          <p id="chartNote" class="microcopy">No analysis has been run.</p>
+        </div>
+
+        <div class="panel timeline-panel">
+          <p class="section-label">Ordered consequence chain</p>
+          <h2>Cascade timeline</h2>
+          <div id="timeline" class="timeline empty-state">Run an eligible scenario to see arrival and branch times.</div>
+        </div>
+      </section>
+
+      <section class="panel comparison-panel">
+        <div class="panel-heading">
+          <div><p class="section-label">Conditional analysis</p><h2>Downstream branch comparison</h2></div>
+          <span class="tag warning">What-if, not probability</span>
+        </div>
+        <div id="branchCards" class="branch-cards">
+          <div class="empty-state">Two branches will appear here: no secondary failure and conditional secondary failure.</div>
+        </div>
+      </section>
+
+      <section id="damageSection" class="panel">
+        <div class="panel-heading">
+          <div><p class="section-label">Alternative-path candidates</p><h2>Avulsion susceptibility</h2></div>
+          <span class="tag warning">Susceptibility, not probability</span>
+        </div>
+        <div id="avulsionResult" class="empty-state">Import candidate-path GeoJSON and run a scenario to assess possible course change.</div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <div><p class="section-label">Point exposure × depth (m) × documented INR cost rate</p><h2>Damage and direct-cost screening</h2></div>
+          <div id="exportButtons" class="export-buttons"></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Asset</th><th>Type</th><th>Depth (m)</th><th>Damage (%)</th><th>Central direct loss (₹)</th><th>Confidence</th></tr></thead>
+            <tbody id="damageRows"><tr><td colspan="6" class="empty-state">No scenario results.</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>JalDrishti Cascade · All observations retain source, observation time and retrieval time · Scenario results require engineering validation.</footer>
+  <script src="/static/app.js"></script>
+  <script src="/static/simulation3d.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "id": "tehri-koteshwar-synthetic-v1",
+  "mode": "offline_demo",
+  "label": "SYNTHETIC DEMONSTRATION - NOT OBSERVED DATA",
+  "description": "Real Indian site names and topology with invented water, rainfall, exposure, cost and alternative-path values solely to exercise the prototype without accounts or internet. These values must never be used for warning or planning decisions.",
+  "fixed_time_basis": "2026-09-29T00:00:00+05:30",
+  "observations": [
+    {"site_id":"tehri","time":"2026-09-29T00:00:00+05:30","observed_at":"2026-09-29T00:00:00+05:30","variable":"reservoir_storage","value":2500,"unit":"MCM","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"},
+    {"site_id":"koteshwar","time":"2026-09-29T00:00:00+05:30","observed_at":"2026-09-29T00:00:00+05:30","variable":"reservoir_storage","value":30,"unit":"MCM","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"}
+  ],
+  "rainfall": [
+    {"site_id":"tehri-upstream","time":"2026-09-28T13:00:00+05:30","variable":"rainfall","value":1,"unit":"mm","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"},
+    {"site_id":"tehri-upstream","time":"2026-09-28T14:00:00+05:30","variable":"rainfall","value":2,"unit":"mm","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"},
+    {"site_id":"tehri-upstream","time":"2026-09-28T15:00:00+05:30","variable":"rainfall","value":4,"unit":"mm","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"},
+    {"site_id":"tehri-upstream","time":"2026-09-28T16:00:00+05:30","variable":"rainfall","value":7,"unit":"mm","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"},
+    {"site_id":"tehri-upstream","time":"2026-09-28T17:00:00+05:30","variable":"rainfall","value":12,"unit":"mm","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"},
+    {"site_id":"tehri-upstream","time":"2026-09-28T18:00:00+05:30","variable":"rainfall","value":18,"unit":"mm","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"},
+    {"site_id":"tehri-upstream","time":"2026-09-28T19:00:00+05:30","variable":"rainfall","value":22,"unit":"mm","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"},
+    {"site_id":"tehri-upstream","time":"2026-09-28T20:00:00+05:30","variable":"rainfall","value":15,"unit":"mm","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"},
+    {"site_id":"tehri-upstream","time":"2026-09-28T21:00:00+05:30","variable":"rainfall","value":10,"unit":"mm","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"},
+    {"site_id":"tehri-upstream","time":"2026-09-28T22:00:00+05:30","variable":"rainfall","value":5,"unit":"mm","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"},
+    {"site_id":"tehri-upstream","time":"2026-09-28T23:00:00+05:30","variable":"rainfall","value":2,"unit":"mm","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"},
+    {"site_id":"tehri-upstream","time":"2026-09-29T00:00:00+05:30","variable":"rainfall","value":0,"unit":"mm","source":"SYNTHETIC DEMONSTRATION","source_url":"app/data/offline_demo.json","quality":"synthetic"}
+  ],
+  "assets": [
+    {"id":"demo-home-cluster","name":"Illustrative residential cluster","type":"residential","lat":30.101208,"lon":78.293833,"quantity":120,"unit":"home","unit_cost_inr":1800000,"cost_source":"SYNTHETIC EXAMPLE RATE - NOT CPWD","source_url":"app/data/offline_demo.json","confidence":"synthetic demo","people":480},
+    {"id":"demo-health-centre","name":"Illustrative health centre","type":"critical_facility","lat":30.101657,"lon":78.294871,"quantity":1,"unit":"facility","unit_cost_inr":30000000,"cost_source":"SYNTHETIC EXAMPLE RATE - NOT CPWD","source_url":"app/data/offline_demo.json","confidence":"synthetic demo","people":40},
+    {"id":"demo-road-segment","name":"Illustrative road segment","type":"road","lat":30.100759,"lon":78.295391,"quantity":1.2,"unit":"km","unit_cost_inr":9000000,"cost_source":"SYNTHETIC EXAMPLE RATE - NOT CPWD","source_url":"app/data/offline_demo.json","confidence":"synthetic demo","people":0},
+    {"id":"demo-cropland","name":"Illustrative cropland inventory","type":"cropland","quantity":15,"unit":"ha","hazard_factor":0.45,"unit_cost_inr":90000,"cost_source":"SYNTHETIC EXAMPLE RATE - NOT CROP SURVEY","source_url":"app/data/offline_demo.json","confidence":"synthetic aggregated exposure","people":0}
+  ],
+  "avulsion_candidates": [
+    {"id":"demo-alternative-path","name":"Illustrative alternative path","current_channel_elevation_m":382.0,"candidate_elevation_m":380.5,"slope_current":0.004,"slope_candidate":0.006,"distance_to_channel_m":250,"evidence_source":"SYNTHETIC SCENARIO - NOT DEM-DERIVED","source_url":"app/data/offline_demo.json","geometry":{"type":"LineString","coordinates":[[78.27,30.098],[78.285,30.084]]}}
+  ]
+}
