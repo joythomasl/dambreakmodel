@@ -7,7 +7,7 @@
     "south": 30.081220265900107
   },
   "satellite": {
-    "url": "/static/data/rishikesh_sentinel2_2024.jpg",
+    "url": "./static/data/rishikesh_sentinel2_2024.jpg",
     "width": 1280,
     "height": 900,
     "bounds": {

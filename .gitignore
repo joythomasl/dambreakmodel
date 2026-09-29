@@ -8,3 +8,5 @@ tmp/
 .DS_Store
 Thumbs.db
 output/qa-*.png
+_site/
+site/

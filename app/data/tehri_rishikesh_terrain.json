@@ -9243,7 +9243,7 @@
   ],
   "limitations": "Regional display sampled at approximately 400 m. It is visual context from Tehri Reservoir to Rishikesh, not the executed inundation grid.",
   "satellite": {
-    "url": "/static/data/tehri_rishikesh_sentinel2_2024.jpg",
+    "url": "./static/data/tehri_rishikesh_sentinel2_2024.jpg",
     "width": 1600,
     "height": 1300,
     "bounds": {

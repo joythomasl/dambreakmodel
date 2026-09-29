@@ -1,5 +1,7 @@
 # HYDRA – Hydrological Disaster Risk Analysis
 
+**Website:** <https://joythomasl.github.io/dambreakmodel/>
+
 A software-only decision-support prototype for the Smart India Hackathon dam/lake-break problem. It now has a zero-licence-cost **self-contained demonstration mode** and a separate live-input mode. The configured Indian demonstration chain is:
 
 `Tehri Dam -> Koteshwar Dam -> Devprayag -> Rishikesh`
@@ -29,6 +31,10 @@ The bundled hydrology fixture lives in `app/data/offline_demo.json` and uses fix
 - Grid-sampled damage uses only illustrative point assets and depth-damage curves; reported INR values are not loss forecasts. The older network-stage screening values remain separate in the JSON for comparison. GIS exports now use the executed grid.
 
 The app and local demonstration use Python's standard library with no third-party runtime package. DualSPHysics and Delft3D are not bundled or executed; the integration adapters produce input packages and report their true status. Running those open-source solvers later may require substantial CPU/GPU resources and site-specific terrain and calibration data.
+
+## GitHub Pages deployment
+
+Every push to `main` runs `.github/workflows/pages.yml`. It builds a GitHub Pages site containing the dashboard, 3-D terrain viewer, five reproducible demonstration scenarios and their KML, zipped Shapefile, GeoTIFF, JSON and PDF downloads. GitHub Pages cannot run the Python backend, so live feeds, uploads and arbitrary parameter combinations remain available through the local application; the hosted site truthfully limits simulation runs to the five packaged presets.
 
 ## Units and Indian display convention
 

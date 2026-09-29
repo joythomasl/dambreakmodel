@@ -36,6 +36,7 @@ const timeLabel = (value) => value ? new Date(value).toLocaleString('en-IN',{day
 const clockTime = (value) => new Date(value).toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',timeZone:INDIA_TIME_ZONE});
 
 async function api(path, options={}) {
+  if(window.HYDRA_STATIC_API)return window.HYDRA_STATIC_API(path,options);
   const response = await fetch(path,{headers:{'Content-Type':'application/json',...(options.headers||{})},...options});
   const payload = await response.json();
   if(!response.ok){const error=new Error(payload.error||`Request failed (${response.status})`);error.payload=payload;throw error;}
@@ -47,13 +48,14 @@ async function boot(){
   const sourcePayload=await api('/api/sources'); app.sources=sourcePayload.sources;
   renderCatalog(); renderState(); renderSources(); drawNetwork(); bindEvents(); drawEmptyChart();
   const query=new URLSearchParams(location.search);
-  if(query.get('demo')==='1'){
+  if(window.HYDRA_STATIC_API||query.get('demo')==='1'){
     await toggleOfflineDemo();
     if(app.mode==='offline_demo'&&query.get('autorun')==='1') await runScenario();
   }
 }
 
 function renderCatalog(){
+  const staticSite=Boolean(window.HYDRA_STATIC_API);
   $('basinName').textContent=app.catalog.basin.name;
   $('basinDescription').textContent=app.mode==='offline_demo'?app.demo.description:app.catalog.basin.description;
   $('basinState').textContent=app.catalog.basin.state;
@@ -61,7 +63,8 @@ function renderCatalog(){
   $('warningStrip').innerHTML=app.mode==='offline_demo'
     ?'<strong>SYNTHETIC DEMONSTRATION.</strong> Rain, water storage, assets and costs are invented. This is not a real flood forecast or official warning.'
     :'<strong>Not an official warning service.</strong> Live observations and model assumptions are shown separately. Conditional failure is a what-if branch.';
-  $('offlineDemo').textContent=app.mode==='offline_demo'?'Return to live inputs':'Launch demonstration';
+  $('offlineDemo').textContent=staticSite?'GitHub Pages demonstration':app.mode==='offline_demo'?'Return to live inputs':'Launch demonstration';
+  $('offlineDemo').disabled=staticSite&&app.mode==='offline_demo';
   $('refreshSources').classList.toggle('hidden',app.mode==='offline_demo');
   $('uploadPanel').classList.toggle('hidden',app.mode==='offline_demo');
   $('presetRow').classList.toggle('hidden',app.mode!=='offline_demo');
@@ -97,7 +100,7 @@ function renderSources(){
 }
 
 async function toggleOfflineDemo(){
-  if(app.mode==='offline_demo'){location.reload();return;}
+  if(app.mode==='offline_demo'){if(!window.HYDRA_STATIC_API)location.reload();return;}
   const button=$('offlineDemo');button.disabled=true;button.textContent='Loading demo…';
   try{
     const demo=await api('/api/demo');
@@ -115,7 +118,7 @@ async function toggleOfflineDemo(){
     $('missionSummary').classList.add('hidden');
     window.Simulation3D?.clear();
   }catch(error){$('runMessage').textContent=`Demonstration could not load: ${error.message}`;}
-  finally{button.disabled=false;if(app.mode!=='offline_demo')button.textContent='Launch demonstration';}
+  finally{button.disabled=Boolean(window.HYDRA_STATIC_API&&app.mode==='offline_demo');if(app.mode!=='offline_demo')button.textContent='Launch demonstration';}
 }
 
 function drawNetwork(branchName=$('simulationBranch')?.value||'conditional_secondary_failure'){

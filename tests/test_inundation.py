@@ -26,7 +26,7 @@ class InundationTests(unittest.TestCase):
         self.assertGreaterEqual(len(local["labels"]), 10)
         self.assertIn("Sentinel-2", local["satellite"]["source"])
         self.assertIn("CC BY-NC-SA", local["satellite"]["license"])
-        self.assertTrue((root / "app" / "static" / local["satellite"]["url"].removeprefix("/static/")).is_file())
+        self.assertTrue((root / "app" / "static" / local["satellite"]["url"].split("static/", 1)[-1]).is_file())
 
         self.assertEqual(["tehri", "koteshwar", "devprayag", "rishikesh"],
                          [node["id"] for node in regional["cascade_nodes"]])
@@ -34,7 +34,7 @@ class InundationTests(unittest.TestCase):
         self.assertGreaterEqual(len(regional["waterways"]), 10)
         self.assertEqual(terrain["width"] * terrain["height"], len(terrain["elevation_m"]))
         self.assertGreater(max(terrain["elevation_m"]), min(terrain["elevation_m"]))
-        self.assertTrue((root / "app" / "static" / terrain["satellite"]["url"].removeprefix("/static/")).is_file())
+        self.assertTrue((root / "app" / "static" / terrain["satellite"]["url"].split("static/", 1)[-1]).is_file())
 
     def test_public_terrain_is_reproducible_and_georeferenced(self):
         terrain = load_terrain()
