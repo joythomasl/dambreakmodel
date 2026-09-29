@@ -3,15 +3,17 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
+import sys
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from app.catalog import load_site, public_catalog
 from app.exports import create_exports
 from app.scenario import load_demo, run_demo_scenario
 from app.state import observation_gate
-
-
-ROOT = Path(__file__).resolve().parents[1]
 
 PRESETS = {
     "tehri_breach": {"event_type": "dam_breach", "breach_width_m": 60, "breach_depth_m": 30, "formation_hours": 1.5, "rainfall_multiplier": 1.0},
